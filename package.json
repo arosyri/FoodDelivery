@@ -1,0 +1,33 @@
+{
+  "name": "FoodDelivery",
+  "version": "1.0.0",
+  "description": "Food Delivery App",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "vite",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test-patterns": "node test-patterns.js",
+    "test-all": "npm run test-patterns",
+    "test:ci": "node test-patterns-ci.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "vite": "^8.0.13"
+  }
+}
